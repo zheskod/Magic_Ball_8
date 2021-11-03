@@ -13,7 +13,8 @@ game_reset = True
 while game_reset == True:
     print('Пожалуйста спроси меня, что бы ты хотел узнать от меня: ')
     question = input()
-    print('Вот мой ответ тебе, о', name_user, choice(answers), end='\n')
+    print('Вот мой ответ тебе, о', name_user,':', end='\n')
+    print(choice(answers))
     print('Хотел бы ты узнать еще что-нибудь от меня? - (д)да / (н)нет')
     rest = input()
     if rest.lower() == 'д':
